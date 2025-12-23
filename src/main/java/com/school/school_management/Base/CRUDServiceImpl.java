@@ -10,13 +10,14 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
-@AllArgsConstructor
 @Slf4j
 public class CRUDServiceImpl<DTO extends BaseDTO, ENTITY extends AbstractAuditingEntity>
         implements CRUDService<DTO> {
 
+    @Autowired
     protected CRUDRepository<ENTITY> repository;
 
+    @Autowired
     protected EntityMapper<DTO, ENTITY> mapper;
 
     @Override

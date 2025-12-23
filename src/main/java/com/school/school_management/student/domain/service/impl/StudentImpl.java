@@ -12,7 +12,4 @@ import org.springframework.stereotype.Service;
 @Service
 public class StudentImpl extends CRUDServiceImpl<StudentDTO, Student> implements StudentService {
 
-    public StudentImpl(CRUDRepository<Student> repository, EntityMapper<StudentDTO, Student> mapper) {
-        super(repository, mapper);
-    }
 }

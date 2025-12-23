@@ -2,7 +2,6 @@ package com.school.school_management.student.domain.dto;
 
 import com.school.school_management.Base.BaseDTO;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -21,6 +20,14 @@ public class StudentDTO extends BaseDTO {
     String standard;
 
     String division;
+
+    String email;
+
+    String branch;
+
+    String phone;
+
+    AddressDTO address;
 
     @NotBlank(message = "Parent Contact is mandatory")
     String parentContact;

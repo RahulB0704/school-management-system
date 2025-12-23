@@ -10,4 +10,6 @@ public class StudentCriteria {
     private String standard;
     private String division;
     private Boolean active;
+
+    AddressCriteria addressCriteria;
 }
