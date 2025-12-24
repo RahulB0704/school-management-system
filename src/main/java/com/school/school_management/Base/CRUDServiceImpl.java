@@ -1,7 +1,6 @@
 package com.school.school_management.Base;
 
-import com.school.school_management.Base.Exception.ValidationError;
-import lombok.AllArgsConstructor;
+import com.school.school_management.Base.CustomException.ValidationError;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

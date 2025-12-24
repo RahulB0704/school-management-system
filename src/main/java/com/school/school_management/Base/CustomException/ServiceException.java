@@ -1,4 +1,4 @@
-package com.school.school_management.Base.Exception;
+package com.school.school_management.Base.CustomException;
 
 public class ServiceException  extends RuntimeException{
     public ServiceException() {
